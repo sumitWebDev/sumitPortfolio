@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const NextConfig = {
+  output: 'export',
+  // Optional if deploying to GitHub Pages:
+  basePath: '/your-repo-name',
+  assetPrefix: '/your-repo-name/',
 };
 
-export default nextConfig;
+export default NextConfig;
