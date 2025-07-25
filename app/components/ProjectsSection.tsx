@@ -1,6 +1,8 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
+
 import { motion } from 'framer-motion';
 
 const projects = [
@@ -37,10 +39,10 @@ export default function ProjectsSection() {
 							className="group relative bg-gray-900/50 rounded-xl overflow-hidden backdrop-blur-sm border border-gray-800"
 						>
 							<div className="aspect-video relative overflow-hidden">
-							<a href="https://google-photo-sharing-kt6iq6ucw-sumits-projects-b57d5c17.vercel.app/">
+							<Link href="https://google-photo-sharing-kt6iq6ucw-sumits-projects-b57d5c17.vercel.app/">
 								<img src="https://raw.githubusercontent.com/sumitWebDev/google-photo-sharing-app/refs/heads/master/public/153786414-1a56cdd8-da98-4057-a698-906917db9233.png" alt={project.title} className="object-cover transition-transform duration-300 group-hover:scale-105" />
-								</a>
 								<div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent transition-transform duration-300 group-hover:scale-105" />
+							</Link>
 							</div>
 							<div className="p-6">
 								<h3 className="text-xl font-bold mb-2">{project.title}</h3>
